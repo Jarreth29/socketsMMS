@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <div class="card p-4">
+    <h2 class="text-center mb-4">Iniciar Sesion</h2>
+    <div class="mb-3">
+      <label for="username" class="form-label">Nombre de Usuario: </label>
+      <input type="text" class="form-control" id="username" [(ngModel)]="username" placeholder="Nombre de Usuario" />
+    </div>
+    <button class="btn bth-priamry w-100" (click)="login()">Entrar</button>
+  </div>
+</div>
