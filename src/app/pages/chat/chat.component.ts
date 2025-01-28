@@ -23,6 +23,7 @@ export class ChatComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     // Regoge el nombre del usuario del localStorage enviado por el login
     this.username = localStorage.getItem('username') || 'Usuario Anonimo';
+    console.log('nombre de usuario del localStorage: ', this.username);
 
     this.conectar();
 

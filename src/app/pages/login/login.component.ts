@@ -17,6 +17,7 @@ export class LoginComponent {
   constructor(private router: Router) {}
   login() {
     if (this.username.trim()) {
+      console.log('nombre en el localstorage: ', this.username);
       // Guarda el nombre de usuario en el localStorage
       localStorage.setItem('username', this.username);
       // Redirige al componente de chat
